@@ -6,6 +6,30 @@
   --background-context-color: #f5f4fa;
   --rare-text-color: #ffffff;
 }
+/* Задали глобальное нормальное наследование */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 /* Задали основные свойства: цвет, шрифт и запасной шрифт */
 body {
   font-family: Roboto, sans-serif;
@@ -19,15 +43,40 @@ a {
 /* Убрали точки со списков */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* Скрыли ненужные семантические заголовки */
 .hidden {
-  display: none;
+  visibility: hidden;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 /* Добавили кнопке наследие */
 button {
   font-family: inherit;
 }
+/* Задали общий вспомогательный класс "контейнер" для центрирования и ограничения контента по ширине */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid lightcoral;
+}
+/* Добавили нужный паддинг */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Оформили логотип в Хеадер*/
 .logo {
   font-family: Raleway;
@@ -69,6 +118,9 @@ button {
 }
 /* Оформили главный заголовок */
 .main {
+  background-color: #2f303a;
+}
+.main-section {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -168,6 +220,9 @@ button {
 }
 /* Оформили стиль кнопки в Студия */
 .button-primary {
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -191,4 +246,8 @@ button {
   font-size: 26px;
   line-height: 1.2;
   color: var(--rare-text-color);
+}
+/* Задали цвет в футер */
+.footer {
+  background-color: #2f303a;
 }
