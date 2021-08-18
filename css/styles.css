@@ -73,10 +73,19 @@ button {
 }
 /* Добавили нужный паддинг */
 .section {
+  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+/* Задали ширину Хеадер */
+.header {
+  width: 1600px;
+  border-bottom: 1px solid #ececec;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+}
 /* Оформили логотип в Хеадер*/
 .logo {
   font-family: Raleway;
@@ -84,6 +93,35 @@ button {
   font-size: 26px;
   line-height: 1.2;
   color: #000000;
+  margin-right: 93px;
+}
+.site-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/* Задали флекс для навигации */
+.site-nav {
+  display: flex;
+}
+/* Задали отступы */
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+/* Можно сделать еще так .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+.auth-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
 /* Добавили стили навигации в Хеадер*/
 .contact-link {
@@ -119,6 +157,7 @@ button {
 /* Оформили главный заголовок */
 .main {
   background-color: #2f303a;
+  width: 1600px;
 }
 .main-section {
   font-weight: 900;
@@ -127,6 +166,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--rare-text-color);
+  margin-bottom: 30px;
 }
 /* Оформили заголовки услуг */
 .title {
@@ -151,8 +191,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 /* Оформили стили имен и профессий */
+.command {
+  background-color: #f5f4fa;
+}
 .names {
   font-weight: 500;
   font-size: 16px;
@@ -246,8 +290,12 @@ button {
   font-size: 26px;
   line-height: 1.2;
   color: var(--rare-text-color);
+  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 161px;
 }
-/* Задали цвет в футер */
+/* Задали цвет и ширину в футер */
 .footer {
+  width: 1600px;
   background-color: #2f303a;
 }
