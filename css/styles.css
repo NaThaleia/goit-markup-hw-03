@@ -166,7 +166,8 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--rare-text-color);
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
   padding-top: 200px;
 }
 /* Оформили заголовки услуг */
@@ -193,6 +194,9 @@ button {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+.service {
+  display: flex;
 }
 /* Оформили стили имен и профессий */
 .command {
@@ -294,7 +298,6 @@ button {
   font-size: 26px;
   line-height: 1.2;
   color: var(--rare-text-color);
-  margin-bottom: 20px;
 }
 /* Задали цвет и ширину в футер */
 .footer {
