@@ -20,13 +20,12 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container">
+      <div class="nav container">
+        <!-- Навигация. Логотип-ссылка с текстом-->
         <nav class="top-nav">
-          <!-- Навигация. Логотип-ссылка с текстом-->
           <a href="/" class="logo"><span class="color-logo">Web</span>Studio</a>
           <!-- Навигация. Информация и контакты -->
           <ul class="site-nav list">
@@ -40,16 +39,16 @@
               <a class="contact-link" href="">Контакты</a>
             </li>
           </ul>
-          <!-- Меню с контактами. Имейл и телефон. -->
-          <ul class="auth-nav list">
-            <li class="item">
-              <a class="adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="item">
-              <a class="adress-link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
         </nav>
+        <!-- Меню с контактами. Имейл и телефон. -->
+        <ul class="right-nav list">
+          <li class="item">
+            <a class="adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="adress-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -65,27 +64,27 @@
       <section class="section">
         <div class="container">
           <!-- Скрытый заголовок -->
-          <h2 class="section-title hidden visually-hidden">Описание</h2>
+          <h2 class="section-title visually-hidden">Описание</h2>
           <ul class="service list">
-            <li>
+            <li class="service-item">
               <h3 class="title upper">Внимание к деталям</h3>
               <p class="text-description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="service-item">
               <h3 class="title upper">Пунктуальность</h3>
               <p class="text-description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="service-item">
               <h3 class="title upper">Планирование</h3>
               <p class="text-description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="service-item">
               <h3 class="title upper">Современные технологии</h3>
               <p class="text-description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
