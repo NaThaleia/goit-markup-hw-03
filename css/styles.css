@@ -224,6 +224,9 @@ button {
 .studio-item:nth-child(3n) {
   margin-right: 0;
 }
+.section-img {
+  display: block;
+}
 /* Оформили стили имен и профессий */
 .command {
   background-color: #f5f4fa;
