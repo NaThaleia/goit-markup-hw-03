@@ -36,6 +36,12 @@ a {
   margin: 0;
   padding: 0;
 }
+/* Задали картинкам свойство блок и максимальную ширину */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Задали глобальные свойства */
 body {
   font-family: Roboto, sans-serif;
@@ -157,6 +163,7 @@ button {
 .main {
   background-color: #2f303a;
   padding-bottom: 200px;
+  text-align: center;
 }
 .main-section {
   font-weight: 900;
@@ -231,7 +238,26 @@ button {
 .command {
   background-color: #f5f4fa;
 }
+.command-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: -30px;
+}
+.command-list > .item {
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
+}
+.card-item {
+  background-color: var(--rare-text-color);
+  border-radius: 4px;
+}
+
 .names {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -239,6 +265,7 @@ button {
   letter-spacing: 0.03em;
 }
 .profession {
+  padding-bottom: 27px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -247,6 +274,7 @@ button {
 }
 /* Оформили рекламу */
 .title-adverb {
+  margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -254,10 +282,26 @@ button {
   color: var(--primary-text-color);
 }
 .text {
+  margin-top: 4px;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.portfolio-items > .item {
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* Добавили стили ссылок в Футер */
@@ -287,8 +331,10 @@ button {
 .style-scope-button {
   font-weight: 500;
   font-size: 16px;
+  padding: 0.3em 1.3em;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--background-context-color);
@@ -299,6 +345,17 @@ button {
 .style-scope-button:focus {
   color: var(--rare-text-color);
   background-color: var(--accent-color);
+}
+.portfolio-buttons {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-buttons .item + .item {
+  margin-left: 8px;
 }
 /* Оформили стиль кнопки в Студия */
 .button-primary {
@@ -355,3 +412,5 @@ margin-right: 30px;
 margin-bottom: 30px; 
 }
 */
+
+/* border-bottom: 1px solid #ececec; */
