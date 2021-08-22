@@ -36,17 +36,17 @@ a {
   margin: 0;
   padding: 0;
 }
-/* Задали картинкам свойство блок и максимальную ширину */
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 /* Задали глобальные свойства */
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--rare-text-color);
   color: var(--primary-text-color);
+}
+/* Задали картинкам свойство блок и максимальную ширину */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Скрыли ненужные семантические заголовки */
 .visually-hidden {
@@ -69,7 +69,6 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid lightcoral;
 }
 /* Добавили нужный паддинг */
 .section {
@@ -247,14 +246,13 @@ button {
   margin-left: -30px;
 }
 .command-list > .item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 .card-item {
   background-color: var(--rare-text-color);
   border-radius: 4px;
 }
-
 .names {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -272,9 +270,8 @@ button {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* Оформили рекламу */
+/* Оформили секцию в Портфолио*/
 .title-adverb {
-  margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -283,7 +280,6 @@ button {
 }
 .text {
   margin-top: 4px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -298,10 +294,15 @@ button {
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-items > .item {
-  flex-basis: calc(100% / 3 -30px);
+.portfolio-items > .portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.portfolio-card {
+  padding: 20px 24px;
+  border: 1px solid #ececec;
+  border-top: 0;
 }
 
 /* Добавили стили ссылок в Футер */
@@ -396,6 +397,9 @@ button {
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
+.block {
+  display: block;
 }
 /* .flex-element:nth-child(3n) {
   margin-right: 0;
