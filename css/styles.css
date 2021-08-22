@@ -79,6 +79,8 @@ button {
 /* Оформили логотип в Хедер*/
 .logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
   font-family: Raleway;
   font-weight: bold;
@@ -101,8 +103,6 @@ button {
 /* Добавили вертикальную геометрию ссылке, добавили ей дисплей-блок, чтоб убрать зазор */
 .site-nav {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 /* Задали флекс для навигации. Секция меню */
 .site-nav {
@@ -126,6 +126,8 @@ button {
 }
 /* Добавили стили навигации в Хеадер*/
 .contact-link {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -138,6 +140,8 @@ button {
 }
 /* Добавили стили контактов в Хеадер */
 .adress-link {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -249,7 +253,6 @@ button {
   border-radius: 4px;
 }
 .names {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -258,7 +261,6 @@ button {
   letter-spacing: 0.03em;
 }
 .profession {
-  padding-bottom: 27px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -292,7 +294,9 @@ button {
 .portfolio-items > .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-top: 30px;
+}
+.text-item {
+  padding: 30px 0;
 }
 .portfolio-card {
   padding: 20px 24px;
