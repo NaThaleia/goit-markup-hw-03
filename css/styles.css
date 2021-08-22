@@ -7,10 +7,7 @@
   --rare-text-color: #ffffff;
 }
 /* Задали глобальное нормальное наследование */
-html {
-  box-sizing: border-box;
-  width: 1600px;
-}
+
 p,
 h1,
 h2,
@@ -43,7 +40,7 @@ body {
   color: var(--primary-text-color);
 }
 /* Задали картинкам свойство блок и максимальную ширину */
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -161,6 +158,7 @@ button {
 /* Оформили главный заголовок */
 .main {
   background-color: #2f303a;
+  padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
@@ -173,7 +171,6 @@ button {
   color: var(--rare-text-color);
   max-width: 696px;
   margin: 0 auto 30px;
-  padding-top: 200px;
 }
 /* Оформили заголовки услуг */
 .title {
@@ -245,11 +242,9 @@ button {
   list-style: none;
   margin-left: -30px;
 }
-.command-list > .item {
+.command-list > .card-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-}
-.card-item {
   background-color: var(--rare-text-color);
   border-radius: 4px;
 }
@@ -317,8 +312,7 @@ button {
 .footer-nav .item + .item {
   margin-top: 9px;
 }
-.link-bottom:hover,
-.link-bottom:focus {
+.adr {
   color: var(--rare-text-color);
 }
 /* Оформили заглавные буквы согласно макету */
@@ -398,9 +392,7 @@ button {
   background-color: #2f303a;
   padding: 60px 0;
 }
-.block {
-  display: block;
-}
+
 /* .flex-element:nth-child(3n) {
   margin-right: 0;
 } 
@@ -416,5 +408,3 @@ margin-right: 30px;
 margin-bottom: 30px; 
 }
 */
-
-/* border-bottom: 1px solid #ececec; */
